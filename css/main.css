@@ -110,6 +110,7 @@ form {
 input.form-control {
   width: calc(100% - 45px);
   padding: 5px;
+  border-radius: 4px 0 0 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -416,6 +417,7 @@ footer .footer-col.footer-price .footer-col-2 {
   height: 100%;
   background-color: #ec8b2e;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 #searchicon {
