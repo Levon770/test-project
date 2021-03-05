@@ -134,7 +134,6 @@ nav.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 0 0 32%;
 }
 
 ul.navbar-nav {
@@ -404,14 +403,6 @@ footer .footer-col.footer-price .footer-col-2 {
   font-weight: bold;
 }
 
-@media (max-width: 1573px) {
-  .collapse-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: none;
-  }
-}
 .btn-search {
   width: 45px;
   height: 100%;
