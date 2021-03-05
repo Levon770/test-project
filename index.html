@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+            <nav class="navbar">
+                <div class="collapse-search">
+
+                        <form class="d-flex">
+                            <input class="form-control " type="search" placeholder="SKU, UPC, Item Name, ID, Alternative IDs" aria-label="Search">
+                            <button type="submit" class="btn-search"><i  id="searchicon" class="fas fa-search"></i></button>
+                        </form>
+
+
+                </div>
+                <div class="collapse-navbar">
+                    <div class="navbar-link">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-cash-register"></i>REG_A</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-tachometer-alt"></i>Sales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-paste"></i>
+                                    Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-store-alt"></i>Back Office</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-link">
+                        <div class="nav-user">
+                            <i class="fas fa-user"></i>
+                            <span class="nav-user-name">Le Uzer</span>
+                        </div>
+                        <div class="nav-question">
+                            <i class="far fa-question-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <section>
+            <div class="section-left">
+                <div class="product-section">
+                    <div class="item-header row">
+                        <div class="item-col form-check">
+                            <div class="">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Product Nam</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-body row">
+                        <div class="item-col">Qty.</div>
+                        <div class="item-col">Price</div>
+                        <div class="item-col">Total</div>
+                    </div>
+                </div>
+
+
+                </div>
+
+            <div class="section-right">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="nav ">
+                            <li class="nav-item waves-effect active">
+                                <a class="nav-pills "  href="#action">Action Menu</a>
+                            </li>
+                            <li class="nav-item waves-effect">
+                                <a class="nav-pills" href="#quick">Quick Pick</a>
+                            </li>
+                            <li class="nav-item waves-effect">
+                                <a class="nav-pills" href="#item">Item View</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="action">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card border">
+                                        <div class="card-header custom-accordion" id="headingOne">
+                                            <a href="" class="collapsed">
+                                                <i class="far fa-money-bill-alt"></i>
+                                                Transaction
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show">
+                                            <div class="card-body">
+                                                <div class="tab-pane-list">
+                                                    <div class="tab-pane ">Return Transaction</div>
+                                                    <div class="tab-pane ">Hold Transaction</div>
+                                                    <div class="tab-pane">Discount Transaction</div>
+                                                    <div class="tab-pane active-show">Sell Gift Cards</div>
+                                                    <div class="tab-pane active-show">Set Salesperson</div>
+                                                    <div class="tab-pane active-show">Transaction Note</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card border">
+                                        <div class="card-header" id="headingTwo">
+                                            <a href="" class="collapsed text-dark">
+                                                <i class="fas fa-user"></i>
+                                                Items
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" >
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card border ">
+                                        <div class="card-header" id="headingThree">
+                                            <a href="" class="collapsed">
+                                                <i class="fas fa-shopping-basket"></i>
+                                                Customer
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse">
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card border">
+                                        <div class="card-header" id="headingFour">
+                                            <a href="" class="collapsed">
+                                                <i class="fas fa-cash-register"></i>
+                                                Register
+                                            </a>
+                                        </div>
+                                        <div id="collapseFour" class="collapse">
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="quick"></div>
+                            <div class="tab-pane" id="item"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-row-left">
+            <div class="footer-col footer-user">
+                <div class="footer-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>Walk In</h3>
+                    <div class="btn-footer">
+                        <button type="submit" value="Submit"><i class="fas fa-plus"></i> <span class="btn-sbm">New</span></button>
+                        <button type="submit" value="Submit"><i class="fas fa-search"></i><span class="btn-sbm">Find</span> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-1">Discounts</div>
+                <div class="footer-col-1">Taxes</div>
+
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-1">0.00</div>
+                <div class="footer-col-1">0.00</div>
+            </div>
+            <div class="footer-col footer-price">
+                <div class="footer-col-1">Total</div>
+                <div class="footer-col-2">&#36; 0.00</div>
+            </div>
+        </div>
+        <div class="footer-row-right">
+            <div class="footer-col">
+
+                    <button  type="reset"  value="Reset" class="btn-cancel"><i class="fas fa-ban"></i>Cancel</button>
+                    <button  type="submit" value="Submit" class="btn-pay"><i class="fas fa-dollar-sign"></i> Pay</button>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="https://kit.fontawesome.com/418f0e17f5.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

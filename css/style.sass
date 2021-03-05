@@ -1,0 +1,318 @@
+@import "settings"
+
+body
+  font-family: $basic-font
+
+.wrapper
+    height: 100%
+    min-height: 100%
+    min-width: 768px
+
+
+header
+  background-color: $header-color
+
+section
+  background-color: $section-color
+
+footer
+  background-color: $footer-color
+
+
+header
+  width: 100%
+  height: 80px
+  color: $color-1
+
+
+form
+  display: flex
+  justify-content: center
+  max-width: 420px
+  min-width: 200px
+  height: 40px
+
+input.form-control
+    width: calc(100% - #{$width})
+    padding: 5px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+nav.navbar
+  @include display-flex-3
+  height: 100%
+
+
+.collapse-search
+    min-width: 30%
+    max-width: 50%
+    margin: auto
+    padding: 0 2%
+
+.collapse-navbar
+  @include display-flex-3
+  flex: 0 0 32%
+
+
+ul.navbar-nav
+  @include display-flex-3
+
+
+
+.navbar-link
+  @include display-flex-2
+
+  .nav-item
+    margin-right: 6px
+    margin-left: 6px
+
+
+.nav-link
+  font-size: 12px
+  color: $color-1
+  padding: 10px 10px
+  transition: 0.5s all
+
+
+
+  &:hover
+    background-color: #4482c0
+    border-radius: 20px
+
+
+  i
+    margin-right: 3px
+
+
+
+.nav-link.active
+  background-color: #4482c0
+  border-radius: 20px
+
+.nav-user
+  width: 90px
+  height: 35px
+  border: 1px solid $color-3
+  border-radius: 4px
+  @include display-flex-2
+
+.nav-user-name
+  font-size: 12px
+  color: $color-1
+  padding-left: 10px
+  cursor: pointer
+
+.nav-question
+  width: 35px
+  height: 35px
+  border: 1px solid $color-3
+  border-radius: 4px
+  @include display-flex-2
+  cursor: pointer
+  margin: 0 10px 0 5px
+
+
+section
+  display: flex
+  min-height: calc(100% - #{$footer-height + $header-height})
+
+
+
+.section-left
+  width: 68%
+  margin-right: 10px
+  background-color: $color-1
+
+
+
+.product-section
+  height: 40px
+  background-color: #e8e8e8
+  @include display-flex-3
+
+  .item-header.row
+
+    width: 70%
+
+    .item-col
+      width: 25%
+      color: $color-4
+      line-height: 40px
+      text-align: center
+
+      &.form-check
+        width: 450px
+        text-align: center
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        padding: 0 2%
+
+  .item-body.row
+    width: 30%
+    @include display-flex
+
+
+
+  .form-info-nav
+     @include display-flex
+
+
+
+
+.section-right
+  min-width: 230px
+  width: 32%
+  background-color: $color-1
+
+  .nav
+    @include display-flex
+    flex-basis: auto
+
+    background-color: #4e555b
+
+    li.nav-item.waves-effect
+      flex: 0 1 33.333%
+      padding: 20px 5px
+      text-align: center
+
+    li.nav-item.waves-effect.active
+      background-color: $color-1
+      position: relative
+
+
+      .nav-pills
+        color: $color-4
+        font-weight: bold
+
+
+  li.nav-item.waves-effect.active:before
+    content: ''
+    width: 100%
+    height: 10px
+    border-radius: 8px 8px 0 0
+    background-color: $color-2
+    position: absolute
+    top: -10px
+    left: 0
+    z-index: 5
+
+  .nav-pills
+    font-size: 18px
+    color: $color-1
+
+  .tab-content
+    padding: 0 10px
+
+  .collapse.show
+    background-color: #f1f1f1
+
+
+  .tab-pane-list
+    @include display-flex-2
+    flex-wrap: wrap
+    padding: 20px 0
+
+    .tab-pane
+      width: 275px
+      height: 40px
+      margin: 5px 8px
+      background-color: #878b8f
+      color: $color-1
+      text-align: center
+      font-size: $text-size
+      line-height: 40px
+      border-radius: 8px
+      cursor: pointer
+
+    .tab-pane.active-show
+       background: #4e555b
+
+
+  .custom-accordion a:first-child
+    color: $color-2 !important
+    font-weight: bold
+
+  .custom-accordion .collapsed
+    color: $color-4
+    i
+      padding-right: 20px
+
+.accordion
+  .card-header
+    padding: 20px 0
+    position: relative
+    cursor: pointer
+    transition: 0.5s all
+
+    .collapsed
+      color: $color-4
+      i
+        padding-right: 20px
+
+    .collapsed:hover
+       color: $color-2
+
+  .card-header:after
+    content: ''
+    width: 100%
+    height: 1px
+    background-color: #f1f1f1
+    position: absolute
+    top: 56px
+    left: 0
+
+
+footer
+  padding: 5px 20px
+  @include display-flex-3
+
+  .footer-row-left
+    max-width: 1290px
+    width: 68%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-right: 15px
+
+
+  .footer-row-right
+    max-width: 620px
+    width: 32%
+
+    .footer-col
+      @include display-flex-3
+
+
+  .footer-col
+      color: $color-1
+      .footer-col-1
+        padding-top: 10px
+
+  .footer-col.footer-user
+      display: flex
+      align-items: center
+      color: $color-1
+
+  .footer-icon i
+        font-size: 32px
+        padding-right: 20px
+  .contact-info
+        h3
+          font-size: $text-size
+          padding-bottom: 5px
+
+  .footer-col.footer-price
+      display: flex
+      align-items: center
+
+      .footer-col-2
+        font-size: 44px
+
+        font-weight: bold
+
+@media (max-width: 1573px)
+  .collapse-navbar
+    @include display-flex-3
+    flex: none
