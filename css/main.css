@@ -379,6 +379,7 @@ footer .footer-col {
 }
 footer .footer-col .footer-col-1 {
   padding-top: 10px;
+  padding-right: 10px;
 }
 footer .footer-col.footer-user {
   display: flex;
