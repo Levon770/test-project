@@ -415,6 +415,10 @@ footer .footer-col.footer-price .footer-col-2 {
   background-color: #ec8b2e;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
+  transition: all 0.3s;
+}
+.btn-search:hover {
+  opacity: 0.9;
 }
 
 #searchicon {
@@ -435,9 +439,13 @@ footer .footer-col.footer-price .footer-col-2 {
   margin: 0 10px;
   font-weight: bold;
   font-size: 18px;
+  transition: all 0.3s;
 }
 .btn-cancel i {
   margin-right: 5px;
+}
+.btn-cancel:hover {
+  color: #FFFFFF;
 }
 
 .btn-pay {
@@ -452,6 +460,11 @@ footer .footer-col.footer-price .footer-col-2 {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
+  transition: all 0.3s;
+}
+
+.btn-pay:hover {
+  color: #FFFFFF;
 }
 
 .btn-footer {
